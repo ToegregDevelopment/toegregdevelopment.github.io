@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toegreg Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        #search-img {
+            width: 30px;
+            cursor: pointer;
+        }
+        #logo-img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        #search-bar {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo-img" src="https://toegregdevelopment.github.io/logo.png" alt="Toegreg Development Logo">
+        <img id="search-img" src="https://toegregdevelopment.github.io/search.png" alt="Search" onclick="toggleSearch()">
+        <div id="search-bar">
+            <!-- Insert your search bar code here -->
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <h1>Toegreg Development</h1>
+        <p>Some text goes here...</p>
+    </div>
 
+    <script>
+        function toggleSearch() {
+            var searchBar = document.getElementById("search-bar");
+            if (searchBar.style.display === "none") {
+                searchBar.style.display = "block";
+            } else {
+                searchBar.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
